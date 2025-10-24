@@ -469,4 +469,4 @@ def login_2(uid):
                     'x-fb-sim-hni': str(rr(20000, 40000)),
                     'x-fb-net-hni': str(rr(20000, 40000)),
                     'x-fb-connection-quality': 'EXCELLENT',
-                    'x-fb-connection-type': 'cell.CTRa
+                    'x-fb-connection-type': 'cell.CTRa',
