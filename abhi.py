@@ -465,7 +465,7 @@ def login_2(uid):
         try:
             with requests.Session() as session:
                 headers = {
-                 'x-fb-connection-bandwidth': str(rr(20000000, 29999999)),
+                 'x-fb-connection-bandwidth': str(rr(20000000, 29999999)),}
                     'x-fb-sim-hni': str(rr(20000, 40000)),
                     'x-fb-net-hni': str(rr(20000, 40000)),
                     'x-fb-connection-quality': 'EXCELLENT',
