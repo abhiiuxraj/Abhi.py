@@ -467,14 +467,14 @@ def login_2(uid):
         try:
             with requests.Session() as session:
                 headers = {
-                    'x-fb-connection-bandwidth': str(rr(20000000, 29999999)),
-                    'x-fb-sim-hni': str(rr(20000, 40000)),
-                    'x-fb-net-hni': str(rr(20000, 40000)),
-                    'x-fb-connection-quality': 'EXCELLENT',
-                    'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
-                    'user-agent': window1(),
-                    'content-type': 'application/x-www-form-urlencoded',
-                    'x-fb-http-engine': 'Liger'
+                  'x-fb-connection-bandwidth': str(rr(20000000, 29999999)),
+                  'x-fb-sim-hni': str(rr(20000, 40000)),
+                  'x-fb-net-hni': str(rr(20000, 40000)),
+                  'x-fb-connection-quality': 'EXCELLENT',
+                  'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
+                  'user-agent': window1(),
+                  'content-type': 'application/x-www-form-urlencoded',
+                  'x-fb-http-engine': 'Liger'
                 }
                 url = f"https://b-api.facebook.com/method/auth.login?format=json&email={str(uid)}&password={str(pw)}&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true"
                 po = session.get(url, headers=headers).json()
